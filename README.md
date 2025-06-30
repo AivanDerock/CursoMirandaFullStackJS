@@ -24,13 +24,18 @@ O **Curso Full Stack com JavaScript e TypeScript** aborda desde os conceitos bá
 
 ## 📖 Conteúdo do Curso
 
-### Seção 1 - Configurando o ambiente
+### Seção 1 - Configurando o Ambiente
 
 - [Aula 1 - Início do curso](./Seção%201/README.md)
 
 ---
 
 ### Seção 2 - JavaScript Básico
+
+- [Aula 2 - Em Breve](./Seção%202/README.md)
+- [Aula 3 - Em Breve](./Seção%202/README.md)
+- [Aula 4 - Em Breve](./Seção%202/README.md)
+- [Aula 5 - Em Breve](./Seção%202/README.md)
 
 ---
 
