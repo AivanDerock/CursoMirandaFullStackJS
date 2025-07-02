@@ -32,7 +32,7 @@ O **Curso Full Stack com JavaScript e TypeScript** aborda desde os conceitos bá
 
 ### Seção 2 - JavaScript Básico
 
-- [Aula 2 - Em Breve](./Seção%202/README.md)
+- [Aula 2 - Aviso](./Seção%202/README.md#aula-2---aviso)
 - [Aula 3 - Em Breve](./Seção%202/README.md)
 - [Aula 4 - Em Breve](./Seção%202/README.md)
 - [Aula 5 - Em Breve](./Seção%202/README.md)
