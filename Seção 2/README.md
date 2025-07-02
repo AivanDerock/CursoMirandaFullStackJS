@@ -26,22 +26,35 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 
 ### Seção 2
 
-- [Aula 2 - Aviso](#aula-2---aviso)
+- [Aula 2 - Em Breve](#)
 - [Aula 3 - Em Breve](#)
 - [Aula 4 - Em Breve](#)
 - [Aula 5 - Em Breve](#)
 
 ---
 
-## Aula 2 - Aviso
+## Aviso
 
-Esta aula seria dedicada a explicar como funciona o `console.log()`, mas decidi não me aprofundar nesses conceitos mais básicos.
+No início desta seção, optei por não fazer anotações detalhadas sobre conteúdos já vistos, como variáveis, operadores lógicos, string, number, boolean, etc. Esses são assuntos básicos que já estudei anteriormente e tenho registrados em um repositório do Curso em Vídeo, focado 100% em JavaScript básico. Por isso, não vou me aprofundar neles aqui para não atrasar o andamento do curso.
 
-Conforme eu for encontrando conteúdos novos ou interessantes, irei adicioná-los como anotação. Já conceitos mais simples, como variáveis, `console.log()`, etc., vou deixar de lado para focar em tópicos mais avançados.
+No entanto, caso apareça algum assunto interessante ou diferente — por exemplo, se o instrutor abordar algo sobre variáveis que não foi tratado no Curso em Vídeo —, farei anotações específicas. Caso contrário, seguirei sem registrar esses pontos.
 
-Caso queira revisar conceitos básicos, recomendo este repositório do meu GitHub, que contém as aulas do Curso em Vídeo, com foco 100% em JavaScript básico:
+PS: Pretendo fazer anotações sobre funções, repetições e lógica de programação, pois são temas que ainda considero pendentes ou que preciso reforçar.
+
+Conforme eu for encontrando conteúdos novos ou relevantes, irei adicioná-los aqui. Para revisar conceitos básicos, recomendo o repositório abaixo, com as aulas do Curso em Vídeo:
 
 [JavaScript - Curso Em Vídeo](https://github.com/AivanDerock/CursoEmVideoJS)
+
+Vou deixar abaixo a lista de exercícios propostos pelo instrutor do curso. Esses exercícios correspondem às aulas para as quais não fiz anotações detalhadas.
+
+### Exercícios:
+
+- [ex001](./Exercicios/ex001)
+- [ex002](./Exercicios/ex002)
+
+---
+
+## Aula 2 - Em Breve
 
 ---
 
@@ -64,4 +77,4 @@ Organizei aqui os conceitos, exemplos e dicas que vão me ajudar a revisar e fix
 
 Bora continuar estudando e evoluindo! 🚀
 
-> _Última atualização: 01/07/25 por Ivan Rocha_
+> _Última atualização: 02/07/25 por Ivan Rocha_
