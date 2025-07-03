@@ -52,6 +52,7 @@ Vou deixar abaixo a lista de exercícios propostos pelo instrutor do curso. Esse
 - [ex001](./Exercicios/ex001)
 - [ex002](./Exercicios/ex002)
 - [ex003](./Exercicios/ex003)
+- [ex004](./Exercicios/ex004)
 
 ---
 
