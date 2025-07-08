@@ -53,6 +53,7 @@ Vou deixar abaixo a lista de exercícios propostos pelo instrutor do curso. Esse
 - [ex002](./Exercicios/ex002)
 - [ex003](./Exercicios/ex003)
 - [ex004](./Exercicios/ex004)
+- [ex005](./Exercicios/ex005)
 
 ---
 
@@ -79,4 +80,4 @@ Organizei aqui os conceitos, exemplos e dicas que vão me ajudar a revisar e fix
 
 Bora continuar estudando e evoluindo! 🚀
 
-> _Última atualização: 02/07/25 por Ivan Rocha_
+> _Última atualização: 07/07/25 por Ivan Rocha_
