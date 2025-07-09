@@ -34,7 +34,7 @@ O **Curso Full Stack com JavaScript e TypeScript** aborda desde os conceitos bá
 
 - [⚠️ AVISO ⚠️](./Seção%202/README.md#aviso)
 - [Aula 2 - Arrays (básico)](./Seção%202/README.md#aula-2---arrays-básico)
-- [Aula 3 - Em Breve](./Seção%202/README.md)
+- [Aula 3 - Const valores mutáveis](./Seção%202/README.md#aula-3---const-valores-mutáveis)
 - [Aula 4 - Em Breve](./Seção%202/README.md)
 - [Aula 5 - Em Breve](./Seção%202/README.md)
 

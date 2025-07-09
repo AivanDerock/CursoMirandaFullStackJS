@@ -28,7 +28,7 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 
 - [⚠️ AVISO ⚠️](#aviso)
 - [Aula 2 - Arrays (básico)](#aula-2---arrays-básico)
-- [Aula 3 - Em Breve](#)
+- [Aula 3 - Const valores mutáveis](#aula-3---const-valores-mutáveis)
 - [Aula 4 - Em Breve](#)
 - [Aula 5 - Em Breve](#)
 
@@ -179,7 +179,57 @@ nomes instanceof Array; // true
 
 ---
 
-## Aula 3 - Em Breve
+## Aula 3 - Const valores mutáveis
+
+A palavra-chave `const` descreve uma variável que **não pode ser reatribuída** (ou seja, não pode receber um novo valor com o operador `=`). Depois de criada, não podemos fazer algo assim:
+
+```javascript
+const nome = 'luiz';
+nome = 'joão';
+```
+
+Porém, existe uma diferença importante entre ``variável`` e ``valor``:
+
+- **Variáveis** são como apelidos (aliases) para um valor salvo na memória.
+- **Valores** são os dados realmente armazenados na memória.
+
+Alguns tipos de valores são **imutáveis** (não podem ser alterados), como:  
+`number`, `string`, `boolean`, `undefined`, `null`, `symbol` e `bigint` (todos os tipos primitivos).
+
+Outros tipos são **mutáveis**, como **arrays** e **objetos** (objetos em geral, exceto `null`).
+
+Valores mutáveis geralmente são estruturas de dados mais complexas, que podem armazenar outros valores internamente (exemplo: um array pode conter vários tipos de dados).
+
+### Usando `const` com tipos primitivos
+
+Quando usamos `const` com tipos primitivos, o valor nunca poderá ser alterado.  
+Além de não permitir reatribuição, o valor também é imutável.
+
+### Usando `const` com valores mutáveis (arrays e objetos)
+
+Quando usamos `const` com arrays ou objetos, a variável continua sendo constante, **mas os valores internos podem ser alterados**.  
+Isso acontece porque, ao alterar um valor interno, não ocorre reatribuição da variável, apenas uma modificação do conteúdo do objeto/array.
+
+#### Exemplos
+
+**Isso pode:**
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+array.pop();
+array[0] = 1024;
+console.log(array); // [1024, 2, 3, 4]
+```
+
+**Isso NÃO pode:**
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+array = 'Legal';
+```
+
+> **Resumo:**  
+> Com `const`, não podemos reatribuir a variável, mas podemos alterar os valores internos de arrays e objetos.
 
 ---
 
