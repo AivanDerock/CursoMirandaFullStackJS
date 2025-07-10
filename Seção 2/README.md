@@ -29,7 +29,7 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 - [⚠️ AVISO ⚠️](#aviso)
 - [Aula 2 - Arrays (básico)](#aula-2---arrays-básico)
 - [Aula 3 - Const valores mutáveis](#aula-3---const-valores-mutáveis)
-- [Aula 4 - Em Breve](#)
+- [Aula 4 - Funções (Básico)](#aula-4---funções-básico)
 - [Aula 5 - Em Breve](#)
 
 ---
@@ -233,7 +233,133 @@ array = 'Legal';
 
 ---
 
-## Aula 4 - Em Breve
+## Aula 4 - Funções (Básico)
+
+Funções servem para executar um bloco de código. Podemos passar valores para elas (parâmetros) e, em alguns casos, elas retornam um valor. Existem funções que não retornam nada.
+
+### Como criar uma função
+
+Para criar uma função, usamos a palavra-chave `function`. As regras para nomear funções são as mesmas das variáveis.
+
+```javascript
+function saudacao() {
+  // bloco de código
+}
+```
+
+Chamamos a função para executar o bloco de código:
+
+```javascript
+saudacao();
+```
+
+O que está dentro da função não pode ser acessado de fora dela (escopo).
+
+### Parâmetros
+
+Parâmetros funcionam como variáveis internas da função:
+
+```javascript
+function saudacao(nome) {
+  console.log(`Bom dia ${nome}`);
+}
+```
+
+Passamos o valor ao chamar a função:
+
+```javascript
+saudacao("Ivan");
+saudacao("Jão");
+saudacao("José");
+```
+
+A função acima imprime um "Bom dia" para cada nome.
+
+### Retorno de valores
+
+Se não usarmos `return`, a função retorna `undefined`. Para retornar um valor, usamos `return`:
+
+```javascript
+function saudacao(nome) {
+  return `Bom dia ${nome}`;
+}
+
+let mensagem = saudacao("Ivan");
+console.log(mensagem); // Bom dia Ivan
+```
+
+### Outro exemplo
+
+```javascript
+function soma(x, y) {
+  const result = x + y;
+  return result;
+}
+
+console.log(soma(2, 2)); // 4
+```
+
+O que está dentro da função é protegido pelo escopo. Exemplo:
+
+```javascript
+function soma(x, y) {
+  const result = x + y;
+  return result;
+}
+
+const resultado = soma(2, 2);
+console.log(resultado); // 4
+```
+
+Após o `return`, nada mais dentro da função é executado.
+
+### Parâmetros com valor padrão
+
+Se não passarmos valores, podemos definir padrões:
+
+```javascript
+function soma(x = 0, y = 0) {
+  return x + y;
+}
+
+console.log(soma());    // 0
+console.log(soma(1));   // 1
+console.log(soma(1, 2));// 3
+```
+
+### Outros modos de criar funções
+
+**Função anônima:**
+
+```javascript
+const raiz = function (n) {
+  return n ** 0.5;
+};
+
+console.log(raiz(9)); // 3
+```
+
+**Arrow function (função moderna):**
+
+```javascript
+const raiz = (n) => {
+  return n ** 0.5;
+};
+
+console.log(raiz(9)); // 3
+```
+
+**Arrow function de uma linha:**
+
+```javascript
+const raiz = n => n ** 0.5;
+console.log(raiz(9)); // 3
+```
+
+Todos os tipos acima têm o mesmo objetivo: executar um bloco de código, mas as formas modernas são mais concisas.
+
+> **Recomendação:**  
+> Não faça funções que executam muitas tarefas diferentes. Prefira funções pequenas e específicas para cada ação.
 
 ---
 
