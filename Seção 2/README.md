@@ -30,6 +30,8 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 - [Aula 2 - Arrays (básico)](#aula-2---arrays-básico)
 - [Aula 3 - Const valores mutáveis](#aula-3---const-valores-mutáveis)
 - [Aula 4 - Funções (Básico)](#aula-4---funções-básico)
+- [Aula 5 - Objetos (Básico)](#aula-5---objetos-básico)
+- [Aula 5 - Em Breve](#)
 - [Aula 5 - Em Breve](#)
 
 ---
@@ -363,7 +365,163 @@ Todos os tipos acima têm o mesmo objetivo: executar um bloco de código, mas as
 
 ---
 
-## Aula 5 - Em Breve
+## Aula 5 - Objetos (Básico)
+
+Objetos têm uma premissa parecida com arrays, mas funcionam de forma diferente em alguns pontos.
+
+### Por que usar objetos?
+
+Imagine que precisamos armazenar vários dados de pessoas:
+
+```javascript
+const nome01 = "Ivan";
+const sobrenome1 = "Rocha";
+const idade1 = 19;
+const nome02 = "José";
+const sobrenome2 = "Barreto";
+const idade2 = 30;
+```
+
+Esse método fica inviável para muitos registros. Para organizar melhor, usamos objetos, que são definidos por chaves `{}`.
+
+### Criando um objeto literal
+
+```javascript
+const pessoa1 = {
+  nome: "Ivan",
+  sobrenome: "Rocha",
+  idade: 19
+};
+```
+
+Podemos acessar os dados assim:
+
+```javascript
+console.log(pessoa1.nome);      // Ivan
+console.log(pessoa1.sobrenome); // Rocha
+console.log(pessoa1.idade);     // 19
+```
+
+### Função para criar objetos
+
+Para evitar repetição, usamos funções para criar objetos:
+
+```javascript
+function criarPessoa(nome, sobrenome, idade) {
+  return {
+    nome,
+    sobrenome,
+    idade
+  };
+}
+
+const pessoa1 = criarPessoa('Ivan', 'Rocha', 19);
+const pessoa2 = criarPessoa('Jose', 'Silva', 20);
+const pessoa3 = criarPessoa('Maria', 'Cabeluda', 50);
+const pessoa4 = criarPessoa('Paulo', 'José', 70);
+
+console.log(pessoa1.nome); // Ivan
+console.log(pessoa2.sobrenome); // Silva
+console.log(pessoa3.idade); // 50
+```
+
+> Não é necessário repetir `nome: nome`, basta usar `nome` que o JS entende.
+
+### Funções dentro de objetos (métodos)
+
+Podemos criar métodos dentro de objetos:
+
+```javascript
+const pessoa1 = {
+  nome: "Ivan",
+  sobrenome: "Rocha",
+  idade: 19,
+
+  fala() {
+    console.log(`${this.nome} ${this.sobrenome} está falando oi...`);
+    console.log(`A minha idade é ${this.idade}`);
+  },
+
+  incrementaIdade() {
+    this.idade++;
+  }
+};
+
+pessoa1.fala();            // Ivan Rocha está falando oi... A minha idade é 19
+pessoa1.incrementaIdade(); // idade passa a ser 20
+pessoa1.fala();            // Ivan Rocha está falando oi... A minha idade é 20
+```
+
+> O `this` referencia o próprio objeto, permitindo acessar suas propriedades dentro dos métodos.
+
+Assim, objetos permitem organizar dados e comportamentos de forma eficiente e reutilizável.
+
+---
+
+## Aula 6 - Valores primitivos e por referência
+
+Já vimos esse tipos de dados primitivos
+
+lembrtando que eles são imutaveis === nao podemos mudar eles. nesse caso, estamos falando do valor
+
+ string, number, boolean, undefined, null (bigint, symbol => nao abordados ainda)
+
+ Em dados primitivos, fazemos uma copia:
+
+ let a = `A`
+ let b = a
+
+ a = "Outra coisa"
+
+ o valor de b, vai permanecer o valor A. pois ele fez uma copia.
+
+dados passado por referencia. que esses sao mutaveis, possivel mudar
+
+arrays, object, e function
+
+ let a = [1, 2, 3]
+ let b = a
+
+ a.push(4)
+ console.log(a) // retorna 1, 2, 3, 4
+
+ caso chame o b // retorna 1, 2, 3, 4
+
+ b.pop()
+ console.log(b) // retorna 1, 2, 3
+
+ a foi afetado pela alteração, sendo 1, 2, 3
+
+ nesse caso, se eu mudar algum valor, vai mudar em ambas
+
+aqui nao estamos copiando. Aqui estamos linkando, onde B vai apontar para o mesmo lugar que a
+
+
+Primitivos copia 
+e por referencia são linkados ou passados por referencia.
+
+para eu copiar o valor de A em caso de referenia, a gente precisa usar o operador : ... (tres pontinhos)
+
+let a = [1, 2, 3]
+let b = [...a]  // aqui foi copiado, b sendo idependente
+
+nesse caso, qualquer alteração que acontença no b, nao vai afetar o a e vise versa
+
+isso se aplica para objetos
+
+A diferença é que em objetos, para copiar de vez ser colchetes [] é chaves {}
+
+let b = {...a}
+
+---
+
+## Aula 7 - Exercicio 6
+
+Para fechar o modulo, o professor recomendou um exercicio com função, array e objetos
+
+Execicio da aula: 
+
+- [ex006](./Exercicios/ex006)
 
 ---
 
@@ -374,4 +532,4 @@ Organizei aqui os conceitos, exemplos e dicas que vão me ajudar a revisar e fix
 
 Bora continuar estudando e evoluindo! 🚀
 
-> _Última atualização: 09/07/25 por Ivan Rocha_
+> _Última atualização: 10/07/25 por Ivan Rocha_
