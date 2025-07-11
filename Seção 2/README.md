@@ -31,7 +31,7 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 - [Aula 3 - Const valores mutáveis](#aula-3---const-valores-mutáveis)
 - [Aula 4 - Funções (Básico)](#aula-4---funções-básico)
 - [Aula 5 - Objetos (Básico)](#aula-5---objetos-básico)
-- [Aula 5 - Em Breve](#)
+- [Aula 6 - Valores primitivos e por referência](#aula-6---valores-primitivos-e-por-referência)
 - [Aula 5 - Em Breve](#)
 
 ---
@@ -460,58 +460,74 @@ Assim, objetos permitem organizar dados e comportamentos de forma eficiente e re
 
 ## Aula 6 - Valores primitivos e por referência
 
-Já vimos esse tipos de dados primitivos
+Já vimos os tipos de dados primitivos em JavaScript.
 
-lembrtando que eles são imutaveis === nao podemos mudar eles. nesse caso, estamos falando do valor
+Lembrando que **primitivos são imutáveis** — não podemos alterar o valor original.  
+Exemplos de tipos primitivos: `string`, `number`, `boolean`, `undefined`, `null`, `bigint`, `symbol` (estes dois últimos não abordados ainda).
 
- string, number, boolean, undefined, null (bigint, symbol => nao abordados ainda)
+### Primitivos: cópia de valor
 
- Em dados primitivos, fazemos uma copia:
+Quando copiamos um valor primitivo, criamos uma cópia independente:
 
- let a = `A`
- let b = a
+```javascript
+let a = 'A';
+let b = a;
 
- a = "Outra coisa"
+a = 'Outra coisa';
 
- o valor de b, vai permanecer o valor A. pois ele fez uma copia.
+console.log(b); // 'A' (b não foi alterado)
+```
 
-dados passado por referencia. que esses sao mutaveis, possivel mudar
+### Por referência: arrays, objetos e funções
 
-arrays, object, e function
+Arrays, objetos e funções são **mutáveis** e **passados por referência**.  
+Ao copiar, ambos apontam para o mesmo local na memória:
 
- let a = [1, 2, 3]
- let b = a
+```javascript
+let a = [1, 2, 3];
+let b = a;
 
- a.push(4)
- console.log(a) // retorna 1, 2, 3, 4
+a.push(4);
+console.log(a); // [1, 2, 3, 4]
+console.log(b); // [1, 2, 3, 4]
 
- caso chame o b // retorna 1, 2, 3, 4
+b.pop();
+console.log(b); // [1, 2, 3]
+console.log(a); // [1, 2, 3] (a também foi alterado)
+```
 
- b.pop()
- console.log(b) // retorna 1, 2, 3
+Nesse caso, qualquer alteração em `a` ou `b` afeta ambos, pois estão "linkados".
 
- a foi afetado pela alteração, sendo 1, 2, 3
+### Como copiar arrays e objetos (evitar referência)
 
- nesse caso, se eu mudar algum valor, vai mudar em ambas
+Para criar uma cópia independente (não referenciada), usamos o operador de espalhamento `...`:
 
-aqui nao estamos copiando. Aqui estamos linkando, onde B vai apontar para o mesmo lugar que a
+**Array:**
 
+```javascript
+let a = [1, 2, 3];
+let b = [...a]; // b é uma cópia independente
 
-Primitivos copia 
-e por referencia são linkados ou passados por referencia.
+b.push(4);
+console.log(a); // [1, 2, 3]
+console.log(b); // [1, 2, 3, 4]
+```
 
-para eu copiar o valor de A em caso de referenia, a gente precisa usar o operador : ... (tres pontinhos)
+**Objeto:**
 
-let a = [1, 2, 3]
-let b = [...a]  // aqui foi copiado, b sendo idependente
+```javascript
+let objA = { nome: 'Ivan', idade: 19 };
+let objB = { ...objA }; // objB é uma cópia independente
 
-nesse caso, qualquer alteração que acontença no b, nao vai afetar o a e vise versa
+objB.idade = 20;
+console.log(objA.idade); // 19
+console.log(objB.idade); // 20
+```
 
-isso se aplica para objetos
-
-A diferença é que em objetos, para copiar de vez ser colchetes [] é chaves {}
-
-let b = {...a}
+> **Resumo:**  
+> Primitivos são copiados por valor (independentes).  
+> Arrays, objetos e funções são copiados por referência (linkados).  
+> Para copiar sem referência, use o operador `...`.
 
 ---
 
