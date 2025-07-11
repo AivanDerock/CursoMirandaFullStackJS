@@ -38,7 +38,7 @@ O **Curso Full Stack com JavaScript e TypeScript** aborda desde os conceitos bá
 - [Aula 4 - Funções (Básico)](./Seção%202/README.md#aula-4---funções-básico)
 - [Aula 5 - Objetos (Básico)](./Seção%202/README.md#aula-5---objetos-básico)
 - [Aula 6 - Valores primitivos e por referência](./Seção%202/README.md#aula-6---valores-primitivos-e-por-referência)
-- [Aula 5 - Em Breve](./Seção%202/README.md)
+- [Aula 7 - Exercício 6](./Seção%202/README.md#aula-7---exercício-6)
 
 ---
 

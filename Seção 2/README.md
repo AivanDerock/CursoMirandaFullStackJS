@@ -32,7 +32,7 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 - [Aula 4 - Funções (Básico)](#aula-4---funções-básico)
 - [Aula 5 - Objetos (Básico)](#aula-5---objetos-básico)
 - [Aula 6 - Valores primitivos e por referência](#aula-6---valores-primitivos-e-por-referência)
-- [Aula 5 - Em Breve](#)
+- [Aula 7 - Exercício 6](#aula-7---exercício-6)
 
 ---
 
@@ -531,11 +531,11 @@ console.log(objB.idade); // 20
 
 ---
 
-## Aula 7 - Exercicio 6
+## Aula 7 - Exercício 6
 
-Para fechar o modulo, o professor recomendou um exercicio com função, array e objetos
+Para fechar a seção, o professor recomendou um exercício envolvendo função, array e objetos.
 
-Execicio da aula: 
+Exercício da aula:
 
 - [ex006](./Exercicios/ex006)
 
