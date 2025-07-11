@@ -10,11 +10,6 @@ Aqui você encontrará resumos, exemplos e explicações dos principais conceito
 
 Este README contém minhas anotações pessoais sobre o **curso de JavaScript e TypeScript**, voltadas para estudo e aplicação prática no ambiente de desenvolvimento **front-end e back-end**. Organizei o conteúdo de forma objetiva, destacando os conceitos mais relevantes para revisão e fixação.
 
-- ``Aula 2:`` Em Breve
-- ``Aula 3:`` Em Breve
-- ``Aula 4:`` Em Breve
-- ``Aula 5:`` Em Breve
-
 ---
 
 > **Atenção:** O link da aula não direciona para o vídeo, pois o conteúdo é pago.  
