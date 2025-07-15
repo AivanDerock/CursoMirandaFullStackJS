@@ -19,8 +19,8 @@ Este README contém minhas anotações pessoais sobre o **curso de JavaScript e 
 
 ## 📚 Conteúdo da Aula
 
-- [Aula 8 - Em Breve]()
-- [Aula 9 - Em Breve]()
+- [Aula 8 - Operadores de comparação](#aula-8---operadores-de-comparação)
+- [Aula 9 - Operadores Lógicos](#aula-9---operadores-lógicos)
 - [Aula 10 - Em Breve]()
 - [Aula 11 - Em Breve]()
 - [Aula 12 - Em Breve]()

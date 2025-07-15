@@ -40,8 +40,8 @@ O **Curso Full Stack com JavaScript e TypeScript** aborda desde os conceitos bá
 
 ### Seção 3 - Lógica de Programação.
 
-- [Aula 8 - Em Breve](./Seção%203/README.md)
-- [Aula 9 - Em Breve](./Seção%203/README.md)
+- [Aula 8 - Operadores de comparação](./Seção%203/README.md#aula-8---operadores-de-comparação)
+- [Aula 9 - Operadores Lógicos](./Seção%203/README.md#aula-9---operadores-lógicos)
 - [Aula 10 - Em Breve](./Seção%203/README.md)
 - [Aula 11 - Em Breve](./Seção%203/README.md)
 - [Aula 12 - Em Breve](./Seção%203/README.md)
