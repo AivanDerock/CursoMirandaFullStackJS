@@ -92,64 +92,71 @@ console.log(10 !== "10"); // true  (compara valor e tipo)
 
 ### Aula 9 - Operadores Lógicos
 
-&& -> and -> E
-|| -> or -> ou
-! -> not -> NAO
+Operadores lógicos em JavaScript:
 
-esse operadores todas a experssoes precisam ser verdadeiras, no caso de and. 
+- `&&` (and / E)
+- `||` (or / OU)
+- `!`  (not / NÃO)
 
-ex: true && true nesse caso a expressao vai retornar verdadeiro, mas caso uma delas altere para false, a expressao inteira se torna false, por exemplo 
+#### AND (`&&`)
 
-sair && dinheiro 
+No operador AND, **todas as expressões precisam ser verdadeiras** para o resultado ser `true`.
 
-para eu sair, eu preciso ter dinheiro. Tenho dinheiro ?? Sim, vamos sair true && true
+**Exemplo:**
 
-não tenho dinheiro, mas quero sair, nesse caso false && true = false, nao vamos sair por falta de dinheiro
+```javascript
+console.log(true && true); // true
+console.log(true && false); // false
+```
 
-podemos usar quantas expressoes quiser
+Se uma das condições for falsa, o resultado é falso.
 
-ex: 
+Exemplo prático:
 
-console.log(true && true && true && true)
-mas lembrando, todas elas precisam ser verdadeiras. caso uma seja falsa, a expressao inteira retorna falsa. 
+```javascript
+let sair = true;
+let dinheiro = true;
+console.log(sair && dinheiro); // true
 
-true && true = true
-false && true = false
-true && false = false
-false && false = false
+dinheiro = false;
+console.log(sair && dinheiro); // false
+```
 
-O || é difernte de and &&
+Você pode usar quantas expressões quiser:
 
-no caso de or, tanto faz se for true ou false, com tanto que uma delas de true
+```javascript
+console.log(true && true && true && true); // true
+console.log(true && true && false && true); // false
+```
 
-seguindo a logica: 
+#### OR (`||`)
 
-para sair de casa, eu precise de dinheiro, tenho dinheiro?? sim, saimos
+No operador OR, **basta uma expressão ser verdadeira** para o resultado ser `true`.
 
-nao tenho dinheiro, mas quero sair, entao saimos
+**Exemplo:**
 
-true || true = true
-false || true = true
-true || false = true
-false || false = false
+```javascript
+console.log(true || false); // true
+console.log(false || false); // false
+```
 
-em or || so retorna false se todas forem falsas, por exemplo 
+Só retorna `false` se todas forem falsas.
 
-nao tenho dinheiro e nem quero sair de casa, então false
+#### NOT (`!`)
 
-Temos o not, o nao !
+O operador NOT inverte o valor lógico.
 
-o nao literalmente inverte a expressao, ele inverte
+**Exemplo:**
 
-ex: 
+```javascript
+console.log(!false); // true
+console.log(!true);  // false
+```
 
-!false = ele retorna true
-!true = false
-
-No caso, se for !true, ele é false
-se ele for !false, ele é true 
-
-confuso, mas é só lembrar que um é o inverso do outro, !sim é não e !não é sim
+> **Resumo:**
+> - `&&` só retorna `true` se todas forem verdadeiras  
+> - `||` só retorna `false` se todas forem falsas  
+> - `!` inverte o valor lógico
 
 ---
 
